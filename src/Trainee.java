@@ -7,6 +7,29 @@ public class Trainee {
 	private static int passed;
 	private static int failed;
 	
+	public static void showAvg(Trainee... t) {
+		int n=t.length;
+		int total=0;
+		for(int i=0; i<n; i++) {
+			total=total+t[i].marks;
+		}
+		System.out.println("Avg Marks For "+n+" : "+total/n);
+	}
+	/*
+	public static void showAvg(Trainee trainee1, Trainee trainee2, Trainee trainee3, Trainee trainee4) {
+		System.out.println("Avg of 4 : "+(trainee1.marks+trainee2.marks+trainee3.marks+trainee4.marks)/4);
+	}
+	public static void showAvg(Trainee trainee1, Trainee trainee2, Trainee trainee3) {
+		System.out.println("Avg of 3 : "+(trainee1.marks+trainee2.marks+trainee3.marks)/3);
+	}
+	
+	public static void showAvg(Trainee trainee1, Trainee trainee2) {
+		System.out.println("Avg of 2 : "+(trainee1.marks+trainee2.marks)/2);
+	}
+	*/
+	
+	
+	
 	public void showMarks() {
 		System.out.println("Marks Scored : "+marks);
 	}
