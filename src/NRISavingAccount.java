@@ -2,6 +2,7 @@
 public class NRISavingAccount extends SavingAccount {
 	private String country;
 
+	@Override
 	public void interest(int amount) {
 		System.out.println("Interest : "+(amount*8/100));
 	}
